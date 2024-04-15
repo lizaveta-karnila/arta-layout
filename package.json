@@ -1,0 +1,28 @@
+{
+  "name": "bp-mobile-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "MODE=development webpack serve",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv-webpack": "^8.1.0",
+    "i18next": "^23.11.1",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "i18next-http-backend": "^2.5.0",
+    "progress-webpack-plugin": "^1.0.16"
+  }
+}

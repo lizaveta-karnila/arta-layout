@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- explanation for this block see in `src/js/warning.js` -->
+  <div class="no-desktop-version-warning" style="display: none;">
+    <div class="no-desktop-version-text">
+      There is no desktop version yet.
+      <br />
+      Please open the application on mobile device.
+    </div>
+  </div>
+
+  <!-- explanation for inline style see in `src/js/warning.js` -->
+  <div class="bg" style="display: none;">
+    <div class="bg__color-filling"></div>
+    <picture>
+      <source type="image/webp"
+        srcset="assets/images/bg-13iphone.webp 1x, assets/images/bg-13iphone@2x.webp 2x, assets/images/bg-13iphone@2-6x.webp 2.6x, assets/images/bg-13iphone@3x.webp 3x"
+        media="(min-height: 812px)">
+      <source type="image/png"
+        srcset="assets/images/bg-13iphone.png 1x, assets/images/bg-13iphone@2x.png 2x, assets/images/bg-13iphone@2-6x.png 2.6x, assets/images/bg-13iphone@3x.png 3x"
+        media="(min-height: 812px)">
+      <source type="image/webp"
+        srcset="assets/images/bg-8iphone.webp 1x, assets/images/bg-8iphone@2x.webp 2x, assets/images/bg-8iphone@2-6x.webp 2.6x, assets/images/bg-8iphone@3x.webp 3x">
+      <img class="bg__image" src="assets/images/bg-8iphone.png"
+        srcset="assets/images/bg-8iphone@2x.png 2x, assets/images/bg-8iphone@2-6x.png 2.6x, assets/images/bg-8iphone@3x.png 3x"
+        alt="background">
+    </picture>
+    <div class="bg__rectangle-shadow"></div>
+    <div class="bg__oval-shadow"></div>
+  </div>
+
+  <!-- explanation for inline style see in `src/js/warning.js` -->
+  <div class="content" style="display: none;">
+    <a class="cross" href="#">
+      <img width="100%" src="assets/icons/Cross@1.5x.svg" alt="cross" />
+    </a>
+
+    <div class="title" data-lang-key="Get Unlimited <br>Access"></div>
+    <ul class="features">
+      <li class="feature">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/images/f1.webp 1x, assets/images/f1@2x.webp 2x, assets/images/f1@2-6x.webp 2.6x, assets/images/f1@3x.webp 3x">
+          <img class="feature__image" src="assets/images/f1.png"
+            srcset="assets/images/f1@2x.png 2x, assets/images/f1@2-6x.png 2.6x, assets/images/f1@3x.png 3x" alt="f1">
+        </picture>
+        <div class="feature__title-wrapper">
+          <p class="feature__title" data-lang-key="Unlimited Art <br>Creation"></p>
+        </div>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/images/f2.webp 1x, assets/images/f2@2x.webp 2x, assets/images/f2@2-6x.webp 2.6x, assets/images/f2@3x.webp 3x">
+          <img class="feature__image" src="assets/images/f2.png"
+            srcset="assets/images/f2@2x.png 2x, assets/images/f2@2-6x.png 2.6x, assets/images/f2@3x.png 3x" alt="f2">
+        </picture>
+        <div class="feature__title-wrapper">
+          <p class="feature__title" data-lang-key="Exclusive <br>Styles"></p>
+        </div>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/images/f3.webp 1x, assets/images/f3@2x.webp 2x, assets/images/f3@2-6x.webp 2.6x, assets/images/f3@3x.webp 3x">
+          <img class="feature__image" src="assets/images/f3.png"
+            srcset="assets/images/f3@2x.png 2x, assets/images/f3@2-6x.png 2.6x, assets/images/f3@3x.png 3x" alt="f3">
+        </picture>
+        <div class="feature__title-wrapper">
+          <p class="feature__title" data-lang-key="Magic Avatars <br>With 20% Off"></p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="selectors">
+      <div id="yearly-plan" class="selector">
+        <div class="selector__left-collumn">
+          <div class="selector__title" data-lang-key="YEARLY ACCESS"></div>
+          <div class="selector__subtitle" data-lang-key="Just {{price}} per year" data-lang-option-price="$39.99"></div>
+        </div>
+        <div class="selector__right-collumn" data-lang-key="{{price}} <br>per week" data-lang-option-price="$0.48">
+        </div>
+
+        <div id="yearly-plan__label" class="selector__label-border">
+          <div class="selector__label-content" data-lang-key="BEST OFFER"></div>
+        </div>
+      </div>
+
+      <div id="weekly-plan" class="selector">
+        <div class="selector__left-collumn">
+          <div class="selector__title" data-lang-key="WEEKLY ACCESS"></div>
+        </div>
+        <div class="selector__right-collumn" data-lang-key="{{price}} <br>per week" data-lang-option-price="$6.99">
+        </div>
+      </div>
+    </div>
+
+    <button class="apply-plan-button" data-lang-key="Continue"></button>
+
+    <footer class="footer">
+      <ul class="footer__links">
+        <li class="footer__link">
+          <a href="#" data-lang-key="Terms of Use">Terms of Use</a>
+        </li>
+        <li class="footer__link">
+          <a href="#" data-lang-key="Privacy Policy">Privacy Policy</a>
+        </li>
+        <li class="footer__link">
+          <a href="#" data-lang-key="Restore">Restore</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

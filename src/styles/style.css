@@ -1,0 +1,342 @@
+.bg {
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg>* {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg__color-filling {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(136.59deg, #DA28FF 3.34%, #7FCCFF 92.15%);
+}
+
+.bg__image {
+  width: 100vw;
+}
+
+.bg__rectangle-shadow {
+  width: 100%;
+  height: 113%;
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(210deg, rgba(0, 0, 0, 9.5e-05) 10.43%, rgba(21, 5, 52, 0.641925) 30.66%, rgba(0, 0, 0, 0.855327) 37.66%, rgba(9, 1, 25, 0.95) 45.57%, rgba(0, 0, 0, 0.95) 77.38%, rgba(5, 1, 14, 0.95) 94.32%);
+}
+
+.bg__oval-shadow {
+  width: 103%;
+  height: 16%;
+  top: -8%;
+  left: -1.5%;
+  background: radial-gradient(rgba(214, 19, 252, 0.6194), hsl(0, 0%, 0%, 0));
+  filter: blur(60px);
+}
+
+.content {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cross {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 38px;
+  left: 24px;
+}
+
+.title {
+  font-family: 'SFProDisplay-Heavy';
+  font-size: 42px;
+  line-height: 46px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: 0px 0px 48px rgba(4, 3, 26, 0.833225);
+}
+
+.features {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+
+.feature {
+  flex: 1;
+  aspect-ratio: 104 / 138;
+  position: relative;
+}
+
+.feature__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.feature__title-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* padding: 0 7px 10px (in the figma) */
+  padding: 0 6% 8%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.feature__title {
+  font-family: 'SFProDisplay-Regular';
+  font-size: 11px;
+  line-height: 13.13px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.selectors {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.selector {
+  width: 100%;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.1016);
+  border-radius: 999px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.selector_selected {
+  background: rgba(255, 255, 255, 0.3024);
+  border: 1px solid rgba(255, 255, 255, 1)
+}
+
+.selector_selected .selector__label-border {
+  background: rgba(255, 255, 255, 1);
+}
+
+.selector_selected .selector__label-content {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.4959);
+}
+
+.selector__left-collumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.selector__title {
+  font-family: 'SFProDisplay-SemiBold';
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.selector__subtitle {
+  opacity: 0.7;
+  font-family: 'SFProDisplay-Regular';
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+}
+
+.selector__right-collumn {
+  flex: 1;
+  opacity: 0.7;
+  font-family: 'SFProDisplay-Regular';
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+}
+
+.selector__label-border {
+  position: absolute;
+  right: 24px;
+  top: -10px;
+  height: 20px;
+  /* 1 - border width */
+  padding: 1px;
+  background: linear-gradient(90deg, #FF96F4 0%, #632AF7 46.99%, #00B5FF 100%);
+  border-radius: 999px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4959);
+}
+
+.selector__label-content {
+  padding: 0 23px;
+  height: 100%;
+  background: linear-gradient(270deg, #0035FF 0%, #BC1FEF 100%);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  font-family: 'SFProDisplay-Bold';
+  font-size: 13px;
+  line-height: 15.23px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+}
+
+.apply-plan-button {
+  width: 100%;
+  height: 56px;
+  font-family: 'SFProDisplay-SemiBold';
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(7, 11, 51, 1);
+  padding: 16px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.footer {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer__link {
+  max-width: calc((100% - 64px) / 3);
+  font-family: 'SFProDisplay-Regular';
+  font-size: 12.5px;
+  line-height: 14.92px;
+  letter-spacing: 0.577px;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links> :first-child {
+  justify-content: flex-start;
+}
+
+.footer__links> :last-child {
+  justify-content: flex-end;
+}
+
+@media (min-width: 380px) {
+  .features {
+    gap: 14px;
+  }
+}
+
+@media (min-height: 780px) {
+  .content {
+    padding: 30px 24px;
+  }
+
+  .selectors {
+    margin-top: 50px;
+  }
+
+  .coutinue-button {
+    margin-top: 16px;
+  }
+
+  .footer {
+    margin-top: 44px;
+  }
+}
+
+.no-desktop-version-warning {
+  display: none;
+}
+
+@media (min-height: 933px) or (min-width: 500px) {
+  .content {
+    display: none;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .no-desktop-version-warning {
+    width: 100dvw;
+    height: 100dvh;
+    font-size: 24px;
+    color: #cc3300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .de .footer__link {
+    font-size: 10px;
+  }
+
+  .de .selector__title {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .es .footer__link {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 490px) {
+  .fr .footer__link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .fr .footer__link {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ja .footer__link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pt .footer__link {
+    font-size: 10px;
+  }
+}

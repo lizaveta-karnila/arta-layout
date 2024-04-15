@@ -1,0 +1,8 @@
+<!-- TODO: in one line -->
+<svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd"
+        d="m10.516 9.9 8.109-8.11.597.597-8.11 8.11 8.388 8.387-.616.616-8.388-8.387-8.109 8.109-.596-.597 8.109-8.11-8.4-8.399.616-.616 8.4 8.4Z"
+        stroke="#fff" stroke-opacity=".4" stroke-linejoin="round"
+        
+        />
+</svg>
