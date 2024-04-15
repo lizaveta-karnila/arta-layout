@@ -1,5 +1,9 @@
 # Arta HTML layout
 
+## Deployed app
+
+https://leafy-flan-1f620f.netlify.app
+
 ## Startup
 
 To run dev server:
