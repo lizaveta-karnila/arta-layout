@@ -40,6 +40,9 @@ module.exports = () => ({
     }),
     new webpack.DefinePlugin({
       'process.env.MODE': JSON.stringify(process.env.MODE),
+      ...(!isDevMode() ? {
+        'process.env.SITE_URL': JSON.stringify(process.env.SITE_URL)
+      } : {}),
     }),
     new Dotenv({
       path: './.env',
