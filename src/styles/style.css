@@ -283,12 +283,19 @@
 }
 
 @media (max-width: 425px) {
+  .de .selector__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 435px) {
   .de .footer__link {
     font-size: 10px;
   }
-
-  .de .selector__title {
-    font-size: 14px;
+}
+@media (max-width: 380px) {
+  .de .footer__link {
+    font-size: 9px;
   }
 }
 
